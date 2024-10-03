@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>BUDGET</title>
+        <link rel="stylesheet" href="wt-assignment.css"/>
+        <script>
+            function validate()
+            {
+            var name=document.getElementById("name").value
+            alert("Thank you for your feedback "+name+"!");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Indian Budget 2024 Survey Form</h1>
+        <img src="C:\Users\Athreya Shashidhara\Desktop\HTML\india.jpg"  align="right" height="60px" width="60px"></a>
+        <h2>Indian Budget 2024 Highlights</h2>
+        <table style="width: 100%;" style="border: 500px;">
+            <strong>
+            <tr>
+                <th>Sector</th>
+                <th>Allocation(in Crores)</th>
+                <th>Percentage Increase</th>
+            </tr>
+        </strong>
+            <tr>
+                <td>Healthcare</td>
+                <td>2,50,000</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>Education</td>
+                <td>1,80,000</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Infrastructure</td>
+                <td>3,20,000</td>
+                <td>20%</td>
+            </tr>
+        </table>
+        <br>
+        <p1>For further details,visit<a href="https://www.indiabudget.gov.in/"> Indian Budget 2024 full report</a></p><br>
+        <h3>Schemes Announced in Budget 2024</h3>
+        <ul style="list-style-type:disc;">
+            <li>Pradhan Mantri Health Mission</li>
+            <li>National Education Enhancement Scheme</li>
+            <li>Infrastructure Development Fund</li>
+            <li>Renewable Energy Boost Initiative</li>
+        </ul>
+        <br>
+        <h4>Feedback</h4>
+        <form onsubmit="return validate()">
+           <label for="name">Name:</label><br>
+            <input type="name" id="name" name="name" size="210" required>
+            <br><br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="gender" name="gender" value="yes" checked>Male
+            <br>
+            <input type="radio" id="gender" name="gender" value="No" checked>Female
+            <br>
+            <br>
+           <label for="email">Email:</label>
+            <input type="email" id="email" name="email"  size="210" maxlength="30" required >
+            <br><br>
+            <label type="Phone Number">Phone Number:</label>
+            <br>
+            <input type="Phone Number" id="Phone Number" name="Phone Number"  size="210" maxlength="10" required>
+            <br>
+            <br>
+           <label for="State">State:</label>
+           <select name="State" id="State">
+            <option value="Karnataka">Karnataka</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Goa">Goa</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+           </select><br><br>
+           <label for="feedback">Feedback:</label><br> 
+           <textarea id="feedback" name="feedback" rows="5" cols="193" required></textarea><br><br> 
+           <button  type="submit" value="Submit" id="submit" value="submit">Submit</button>
+           <button type="reset" value="Reset" id="reset">Reset</button>
+        </form>
+    </body>
+</html>
